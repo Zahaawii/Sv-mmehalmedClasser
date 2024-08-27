@@ -1,0 +1,20 @@
+package svømmehalMedKlasser;
+
+public class Velkommen {
+
+	public void intro() {
+		System.out.println("Velkommen til Zahaas svømmehal");
+		}
+	
+	public void valgmulighed() {
+		System.out.println("Ønsker du at logge ind: Tast 1");
+		System.out.println("Ønsker du at oprette en bruger: Tast 2");
+		System.out.println("Ønsker du at deltage et hold uden en konto: Tast 3");
+		} 
+	
+	public void opretBruger() {
+		System.out.println("Du har valgt at oprette en bruger");
+		System.out.println("_________________________________");
+		System.out.println("Vi skal bruge nogle informationer på dig for at lave en konto til dig");
+	}
+	}
