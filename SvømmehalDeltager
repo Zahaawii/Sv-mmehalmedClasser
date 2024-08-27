@@ -1,0 +1,49 @@
+package svømmehalMedKlasser;
+
+public class SvømmehalDeltager {
+	
+	private String navn;
+	private int alder;
+	private double højde;
+	private String niveau;
+	
+public SvømmehalDeltager (String navn, int alder, double højde, String niveau) {
+	this.navn = navn;
+	this.alder = alder;
+	this.højde = højde;
+	this.niveau = niveau;
+}
+
+public String getNavn (String navn) {
+	return navn;
+}
+
+public void setNavn () {
+	this.navn = navn;
+}
+
+public int getAlder (int alder) {
+	return alder;
+}
+
+public void setAlder() {
+	this.alder = alder;
+}
+
+public double højde (double højde) {
+	return højde;
+}
+public void setHøjde() {
+	this.højde = højde;
+}
+
+public String getNiveau (String niveau) {
+	return niveau;
+	
+}
+
+public void setNiveau() {
+	this.niveau = niveau;
+}
+
+}
