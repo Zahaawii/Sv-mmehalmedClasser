@@ -1,0 +1,16 @@
+package svømmehalMedKlasser;
+
+public class LoginInformationer {
+
+public void loginStartSide() {
+	System.out.println("Du er ankommet til login siden:");
+	}
+	
+public void indtastLoginBrugernavn() {
+	System.out.println("Indtast brugernavn:");
+	}
+
+public void indtastLoginAdgangskode() {
+	System.out.println("Indtast adgangskode:");
+	}
+}
