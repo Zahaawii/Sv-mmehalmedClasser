@@ -1,0 +1,46 @@
+package svømmehalMedKlasser;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		Velkommen udprint = new Velkommen();
+		LoginInformationer udprintLogin = new LoginInformationer();
+		Administrator adminLogin = new Administrator("Admin", "Admin");
+		
+		//Velkom brugeren og giv valgmuligheder
+		udprint.intro();
+		input.nextLine();
+		udprint.valgmulighed();
+		
+		//Bruger tager en beslutning
+		int brugerValgmulighed = input.nextInt();
+		
+		
+		if (brugerValgmulighed == 1) {
+			
+		//Bruger logger ind	
+			
+		udprintLogin.loginStartSide();
+		input.nextLine();
+		
+		udprintLogin.indtastLoginBrugernavn();
+		String brugernavn = input.next();
+		
+		udprintLogin.indtastLoginAdgangskode();
+		String adgangskode = input.next();
+		
+		if(adminLogin.authenticate(brugernavn, adgangskode)) {
+			adminLogin.loggetInd();
+		} 
+	
+	} 
+		else if (brugerValgmulighed == 2) {
+		udprint.opretBruger();
+	}
+
+}
+}
