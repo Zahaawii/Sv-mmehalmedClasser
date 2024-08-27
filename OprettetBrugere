@@ -1,0 +1,32 @@
+package svømmehalMedKlasser;
+
+public class OprettetBrugere {
+
+String [] oprettetBrugere = {"Zahaa", "O-Dawg", "Phillip", "Jan", "Helena"};
+String [] oprettetBrugereAdgangskode = {"Zahaa123", "Omar123", "Phillip123", "Jan123", "Helena123"};
+
+public OprettetBrugere () {
+	this.oprettetBrugere = oprettetBrugere;
+	this.oprettetBrugereAdgangskode = oprettetBrugereAdgangskode;
+}
+
+public String[] getOprettetBrugere(String [] oprettetBrugere) {
+	return oprettetBrugere;
+}
+
+public void setOprettetBrugere() {
+	this.oprettetBrugere = oprettetBrugere;
+}
+
+public String[] getOprettetBrugereAdgangskode(String[] oprettetBrugereAdgangskode) {
+	return oprettetBrugereAdgangskode;
+}
+public void setOprettetBrugereAdgangskode() {
+	this.oprettetBrugereAdgangskode = oprettetBrugereAdgangskode;
+}
+
+public void brugerLoggetInd() {
+	System.out.println("Du er nu logget ind som bruger: " + oprettetBrugere);
+}
+}
+
