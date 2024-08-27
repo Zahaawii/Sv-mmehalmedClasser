@@ -1,0 +1,20 @@
+package svømmehalMedKlasser;
+
+class Administrator {
+	
+private String admin;
+private String adminKode; 
+
+public Administrator (String admin, String adminKode) {
+	this.admin = admin;
+	this.adminKode = adminKode;
+}
+
+public boolean authenticate (String admin, String adminKode) {
+	return 
+			this.admin.equals(admin) && this.adminKode.equals(adminKode);
+}
+public void loggetInd() {
+	System.out.println("Du er nu logget ind som administrator");
+}
+}
